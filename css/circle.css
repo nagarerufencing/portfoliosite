@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/* ヘッダー追加 */
+.title {
+  height: 310px;
+  background-image: url(../images/circle/img-back3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* ここまでヘッダー */
+
+/* 枠決め・左にリスト*/
+.circle-contents {
+  width: 1080px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+/* メインの枠組み */
+.cicle-item {
+  flex-grow: 1;
+  max-width: 765px;
+}
+
+/* 中見出しの設定 */
+.circle-item h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* 疑似要素の追加 */
+.circle-item h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+/* 項目グリッド・余白決め */
+.item-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+/* リンクエリアにする */
+.item-list a {
+  display: block;
+  transition-duration: 0.2s;
+}
+
+/* マウスで拡大 */
+.item-list a:hover {
+  transform: scale(1.05);
+}
+
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+/* サイドバーの設定 */
+.circle-menu {
+  flex-shrink: 0;
+  margin-right: 60px;
+  position: relative;
+}
+
+.circle-menu-inner {
+  position: sticky;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.circle-menu-inner h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.circle-menu-inner ul {
+  list-style-type: disc;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.circle-menu-inner li {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* 作品詳細ページ */
+.item-area {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 詳細の画像 */
+.item-area img {
+  width: 50%;
+  max-width: 380px;
+}
+
+/* 説明文横の余白 */
+.about-item {
+  margin-left: 30px;
+}
+
+/* 説明文のスタイル */
+.about-item .item-text {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* ボタンのスタイル */
+.about-item a {
+  background-color: #f4dd64;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family:  sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* マウスをかざす */
+.about-item a:hover {
+  background-color: #d8b500;
+}
+
+/* work上の余白 */
+.works {
+  margin-top: 60px;
+}
+
+/* フッター上の余白 */
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+
+  /* 全体の枠の設定 */
+  .circle-contents {
+    display: block;
+    max-width: 100%;
+    margin-top: 60px;
+  }
+
+  /* コンテンツエリアの設定 */
+  .works-item {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: repeat(auto-fill, 220px);
+  }
+
+  /* サイドバーの設定 */
+  .works-menu {
+    background-color: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 60px;
+    margin-right: 0;
+  }
+
+  .works-menu-inner {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-area {
+    display: block;
+  }
+
+  .item-area img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-item {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .about-item a {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+
+  /* 項目グリッド・余白決め */
+  .item-list {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    column-gap: 50px;
+    row-gap: 40px;
+  }
+
+}
