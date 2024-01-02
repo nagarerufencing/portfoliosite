@@ -155,6 +155,7 @@
 
 /* ボタンのスタイル */
 .about-item a {
+  color: #ffffff;
   background-color: #6472f4;
   display: inline-block;
   min-width: 180px;
