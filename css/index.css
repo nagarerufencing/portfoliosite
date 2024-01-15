@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/* ファーストビューの設定 */
+.first-view {
+  height: calc(100vh - 110px);
+  background-image: url(../images/index/トップサイト画像.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+/* ファーストビューのテキスト */
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+/* 見出しのデザイン */
+.first-view-text h1 {
+  font-family: sans-serif;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+/* その下のデザイン */
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* 写真下の導入場所 */
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+/* 文の指定 */
+.lead p {
+  line-height: 2;
+  text-align: center;
+}
+
+/* リンクボタンの場所 */
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ボタンの色・幅・高さ・角 */
+.link-button {
+  color: #ffffff;
+  background-color: #6472f4;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: "MS Pゴシック", sans-serif;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+/* マウスを置いた時に反応 */
+.link-button:hover {
+  background-color: #2b00d8;
+  font-size: 18px;
+}
+
+/* worksの枠 */
+.works {
+  background-color: #f8f8f8;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+
+/* worksのヘッダー */
+.works h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ヘッダー下の疑似要素 */
+.works h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 項目の表示エリアの横・余白・スクロール */
+.item-list {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  overflow: scroll;
+}
+
+/* 項目の幅を設定 */
+.item-list li {
+  flex-shrink: 0;
+  width: 260px;
+  margin-left: 75px;
+}
+
+/* 項目左端の余白設定 */
+.item-list li:first-child {
+  margin-left: 0;
+}
+
+/* 画像と文の余白 */
+.item-list dl {
+  margin-top: 20px;
+}
+
+/* 見出しを太字 */
+.item-list dt {
+  font-weight: bold;
+}
+
+/* その下の説明文の指定 */
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+
+
+/* モバイル版の作製 */
+@media (max-width: 800px) {
+
+  /* ファーストビューの写真と文字位置 */
+  .first-view {
+    height: calc(100vh - 50px);
+    background-image: url(../images/index/スマホ.png);
+    align-items: flex-start;
+  }
+
+  /* 文字の位置調整 */
+  .first-view-text {
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+
+  /* 見出しスタイルの調整 */
+  .first-view-text h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  /* その下の調整 */
+  .first-view-text p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  /* 導入文の余白 */
+  .lead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* 導入文を左揃え */
+  .lead p {
+    text-align: left;
+  }
+
+  .item-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-list li {
+    width: 220px;
+    margin-left: 30px;
+  }
+
+}
