@@ -3,7 +3,7 @@
 /* ファーストビューの設定 */
 .first-view {
   height: calc(100vh - 110px);
-  background-image: url(../images/index/topsite.png);
+  background-image: url(../images/index/トップサイト画像.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -65,7 +65,7 @@
   border-radius: 24px;
   font-family: "MS Pゴシック", sans-serif;
   font-size: 14px;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 /* マウスを置いた時に反応 */
