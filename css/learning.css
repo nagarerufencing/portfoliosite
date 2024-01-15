@@ -3,7 +3,7 @@
 /* タイトルエリアの枠組み・画像 */
 .title {
   height: 310px;
-  background-image: url(../images/learning/back-img2.png);
+  background-image: url(../images/learning/タイトル画像.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -67,14 +67,13 @@
 
 /*内容・画像大きさ */
 .feature img {
-  width: 360px;
+  width: 500px;
 }
-
 
 /* テキスト幅と余白 */
 .feature-text {
   max-width: 500px;
-  margin-right: 40px;
+  margin-right: 10px;
 }
 
 /* エリアを反転 */
@@ -84,8 +83,7 @@
 
 /* 余白の反転 */
 .reverse .feature-text {
-  margin-left: 40px;
-  margin-right: 0;
+  margin-left:  30px;
 }
 
 /* 中見出しの指定 */
@@ -110,6 +108,59 @@
   font-size: 15px;
   line-height: 28px;
   margin-top: 25px;
+  margin-right: 10px;
+}
+
+/* スライドの挿入 */
+.g-slide{
+  width: 500px;
+  height: 282px;
+  position: relative;
+  overflow: auto;
+  padding-top: 65px;
+  }
+  .g-slide iframe {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  }
+
+  /* 写真下の導入場所 */
+.lead {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+/* 文の指定 */
+.lead p {
+  line-height: 2;
+  text-align: center;
+}
+
+/* リンクボタンの場所 */
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ボタンの色・幅・高さ・角 */
+.link-button {
+  color: #ffffff;
+  background-color: #6472f4;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: "MS Pゴシック", sans-serif;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+/* マウスを置いた時に反応 */
+.link-button:hover {
+  background-color: #2b00d8;
+  font-size: 18px;
 }
 
 .footer {
@@ -146,4 +197,10 @@
     height: auto;
     margin-top: 25px;
   }
+
+  .g-slide{
+    width: 100%;
+    height: auto;
+    }
+  
 }
